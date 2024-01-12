@@ -8,6 +8,9 @@ import rockfit from "../assets/rockfit.png";
 import weather from "../assets/weather.png"
 import book from "../assets/books.png"
 import tech from "../assets/tech.png"
+import github from "../assets/github.svg"
+import linkedin from "../assets/linkedin.svg"
+import logo from "../assets/logo3.svg"
 
 const features = [
   {
@@ -148,8 +151,6 @@ export default function Projectspage() {
         </div>
       </div>
 
-
-{/* reverse */}
       <div className="overflow-hidden bg-white py-24 sm:py-20">
   <div className="mx-auto max-w-7xl px-6 lg:px-8">
     <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
@@ -272,8 +273,6 @@ export default function Projectspage() {
         </div>
       </div>
 
-
-{/* reverse */}
       <div className="overflow-hidden bg-white py-24 sm:py-20">
   <div className="mx-auto max-w-7xl px-6 lg:px-8">
     <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
@@ -325,7 +324,28 @@ export default function Projectspage() {
     </div>
   </div>
 </div>
+<footer className="w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
+  <div className="text-center">
+    <div>
+    </div>
+    <div className="mt-3">
+      <p className="text-gray-500">Website made by Niko</p>
+      <div className="h-20 flex justify-center">
+      <img src={logo} alt="logo" />
+      </div>
+    </div>
 
+    <div className="mt-3 space-x-3">
+    <a className="inline-flex justify-center items-center w-12 h-12 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition" href="https://www.linkedin.com/in/niko-auer/" target="_blank" rel="noopener noreferrer">
+    <img src={linkedin} alt="Linkedin Logo" className="h-10"/>
+</a>
+
+      <a className="inline-flex justify-center items-center w-12 h-12 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition" href="https://github.com/nikoauer" target="_blank" rel="noopener noreferrer">
+        <img src={github} alt="Github Logo" className="h-10"/>
+      </a>
+    </div>
+  </div>
+</footer>
     </>
   );
 }

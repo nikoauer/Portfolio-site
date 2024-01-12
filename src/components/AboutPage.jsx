@@ -29,7 +29,7 @@ export default function AboutPage() {
         <div className="md:grid md:grid-cols-2 md:gap-10 lg:gap-16 md:items-center">
           <div className="hidden md:block mb-24 md:mb-0 sm:px-6">
             <div className="relative">
-              <img className="rounded-xl" src={portrait} alt="portrait" />
+              <img className="rounded-xl shadow-xl" src={portrait} alt="portrait" />
               <div className="absolute bottom-0 start-0 -z-[1] translate-y-10 -translate-x-14">
                 <svg
                   className="max-w-[10rem] h-auto text-blue-200"
@@ -117,7 +117,7 @@ export default function AboutPage() {
                 </p>
 
                 <p className="text-xl font-medium italic text-gray-800 md:text-2xl md:leading-normal xl:text-3xl xl:leading-normal">
-                  Hi, I am Niko! I am passionate full-stack developer interested
+                  Hi, I am Niko Auer! I am a passionate full-stack developer interested
                   in developing solutions for modern frontend and backend
                   projects.
                 </p>
@@ -163,7 +163,7 @@ export default function AboutPage() {
             or working I will be spending my town outdoors rock climbing or
             hiking.
           </p>
-          <button type="button" className="py-3 px-4 my-5 inline-flex items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+          <button type="button" className="shadow-xl py-3 px-4 my-5 inline-flex items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
   <a href={Resume} download={Resume}>Download Resume</a>
 </button>
         </div>
