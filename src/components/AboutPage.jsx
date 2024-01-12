@@ -425,7 +425,7 @@ export default function AboutPage() {
     <div>
     </div>
     <div className="mt-3">
-      <p className="text-gray-500">Website made by Niko & Preline</p>
+      <p className="text-gray-500">Website made by Niko</p>
       <div className="h-20 flex justify-center">
       <img src={logo} alt="logo" />
       </div>
