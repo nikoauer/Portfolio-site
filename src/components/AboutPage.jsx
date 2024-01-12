@@ -140,10 +140,10 @@ export default function AboutPage() {
       </div>
       <main id="content" role="main">
         <div className="text-center py-10 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-          <h1 className="block text-2xl font-bold text-black sm:text-4xl">
+          <h1 className="block text-2xl font-bold text-blue-600 sm:text-4xl">
             So who am I?
           </h1>
-          <p className="mt-3 text-lg text-black-300">
+          <p className="mt-3 text-lg text-gray-600">
             I come with a rich background of 10 years in television broadcast
             and photography. My career has allowed me work on small community
             projects such as Tropfest to large scale projects such as the
