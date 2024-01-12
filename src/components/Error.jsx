@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import logo from "../assets/logo3.svg"
 
 export default function Error() {
     return (
@@ -7,7 +8,7 @@ export default function Error() {
     <div className="max-w-[50rem] flex flex-col mx-auto w-full h-full">
       <header className="mb-auto flex justify-center z-50 w-full py-4 my-10">
         <nav className="px-4 sm:px-6 lg:px-8 n" aria-label="Global">
-          <Link className="flex-none text-xl font-semibold sm:text-3xl" to="/" aria-label="Brand">Niko Auer</Link>
+          <Link className="flex-none text-xl font-semibold sm:text-3xl" to="/" aria-label="Brand"><img src={logo} alt="niko auer logo" className="h-80"/></Link>
         </nav>
       </header>
 
@@ -20,10 +21,11 @@ export default function Error() {
   <Link to="/">Home</Link>
 </button>
       </div>
+      
 
       <footer className="mt-auto text-center py-5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-sm text-gray-500">All right reservered to Niko Auer</p>
+          <p className="text-sm text-gray-500">All rights reservered to Niko Auer</p>
         </div>
       </footer>
     </div>

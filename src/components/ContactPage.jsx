@@ -16,8 +16,7 @@ export default function ContactPage() {
       GET IN TOUCH WITH <span className="text-blue-600">ME</span>
     </h2>
     <p className="text-base text-body-color leading-relaxed mb-9">
-      Leave a message and I will get back to you soon. Otherwise, feel free to
-      contact me or look at my work on my Github, LinkedIn, or Email.
+      Leave a message and I will get back to you soon. Otherwise, feel free to look at my work or contact me on my Github, LinkedIn, or Email.
     </p>
 
     {/* contact details */}

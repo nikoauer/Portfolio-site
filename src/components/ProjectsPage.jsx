@@ -5,7 +5,7 @@ import {
   ArrowTopRightOnSquareIcon,
 } from "@heroicons/react/20/solid";
 import rockfit from "../assets/rockfit.png";
-import weather  from "../assets/weather.png"
+import weather from "../assets/weather.png"
 import book from "../assets/books.png"
 import tech from "../assets/tech.png"
 
@@ -13,7 +13,7 @@ const features = [
   {
     name: "How does it work?",
     description:
-      "A customer simply inputs their right and left foot measurement in centermeters and it will return recommended shoes and their size.",
+      "A customer simply inputs their right and left foot measurement in centimeters and it will return recommended shoes and their size.",
     icon: Cog6ToothIcon,
   },
   {
@@ -80,7 +80,7 @@ const weatherinfo = [
     },
     {
       name: "Tools used:",
-      description: "Openweather API, HTML, CSS, Javascript, mySQL, Sequalize, bcrypt",
+      description: "Openweather API, HTML, CSS, Javascript, mySQL, Sequelize, bcrypt",
       icon: WrenchIcon,
     },
   ];
