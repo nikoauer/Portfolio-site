@@ -25,10 +25,10 @@ export default function Navbar() {
       </div>
       <div id="navbar-collapse-with-animation" className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
         <div className="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:ps-7">
-          <Link className="font-medium text-blue-600 hover:text-blue-400 sm:py-6"  to="/" aria-current="page">Home</Link>
-          <Link className="font-medium text-gray-600 hover:text-gray-400 sm:py-6" to="/about">About</Link>
-          <Link className="font-medium text-gray-600 hover:text-gray-400 sm:py-6" to="/projects">Projects</Link>
-          <Link className="font-medium text-gray-600 hover:text-gray-400 sm:py-6" to="/contact">Contact</Link>
+          <Link className="font-medium text-blue-700 hover:text-blue-500 sm:py-6"  to="/" aria-current="page">Home</Link>
+          <Link className="font-medium text-gray-700 hover:text-gray-500 sm:py-6" to="/about">About</Link>
+          <Link className="font-medium text-gray-700 hover:text-gray-500 sm:py-6" to="/projects">Projects</Link>
+          <Link className="font-medium text-gray-700 hover:text-gray-500 sm:py-6" to="/contact">Contact</Link>
         </div>
       </div>
     </nav>
