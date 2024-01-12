@@ -6,99 +6,77 @@ export default function ContactPage() {
   return (
     <section className="bg-white py-2 lg:py-[120px] overflow-hidden relative z-10 flex justify-center">
       <div className="container">
-        <div className="flex flex-wrap lg:justify-between -mx-4">
-          <div className="w-full lg:w-1/2 xl:w-6/12 px-4">
-            <div className="max-w-[570px] mb-12 lg:mb-0">
-              <span className="block mb-4 text-base text-primary font-semibold">
-                Contacts
-              </span>
-              <h2
-                className="
-                  mb-6
-                  uppercase
-                  font-bold
-                  text-[32px]
-                  sm:text-[40px]
-                  lg:text-[36px]
-                  xl:text-[40px]
-                  "
-              >
-                GET IN TOUCH WITH  <span className="text-blue-600">ME</span>
-              </h2>
-              <p className="text-base text-body-color leading-relaxed mb-9">
-                Leave a message and I will back to you soon otherwise feel free
-                to contact me or look at my work on my Github, LinkedIn or
-                Email.
-              </p>
-              {/* contact details */}
-              <div className="flex">
-                <span class="flex-shrink-0 inline-flex justify-center items-center w-[60px] h-[60px] rounded-full border border-gray-200 bg-white shadow-md mx-auto ">
-                  <a
-                    href="https://www.linkedin.com/in/niko-auer-463195bb/"
-                    target="_black"
-                  >
-                    <img src={linkedin} className="h-12" alt="linkedin Logo" />
-                  </a>
-                </span>
-                <div class="ms-5 sm:ms-8">
-                <a
-                    href="https://www.linkedin.com/in/niko-auer-463195bb/"
-                    target="_black"
-                  >
-                  <h3 class="text-base sm:text-lg font-semibold text-blue-600 ">
-                    LinkedIn
-                  </h3>
-                  </a>
-                  <p class="mt-1 text-gray-600 ">
-                    I invite you to explore my professional journey, including
-                    details about my career, extensive experience, and
-                    educational background, on my LinkedIn profile.
-                  </p>
-                </div>
-              </div>
-              <div className="flex">
-                <span class="flex-shrink-0 inline-flex justify-center items-center w-[60px] h-[60px] rounded-full border border-gray-200 bg-white shadow-md mx-auto ">
-                  <a
-                    href="https://github.com/nikoauer"
-                    target="_black"
-                  >
-                    <img src={github} className="h-12" alt="github Logo" />
-                  </a>
-                </span>
-                <div class="ms-5 sm:ms-8">
-                <a
-                    href="https://github.com/nikoauer"
-                    target="_black"
-                  >
-                  <h3 class="text-base sm:text-lg font-semibold text-blue-600 ">
-                    Github
-                  </h3>
-                  </a>
-                  <p class="mt-1 text-gray-600 ">
-                    You can explore all my current repositories and future projects on my Github profile. 
-                  </p>
-                </div>
-              </div>
-              <div className="flex">
-                <span class="flex-shrink-0 inline-flex justify-center items-center w-[60px] h-[60px] rounded-full border border-gray-200 bg-white shadow-md mx-auto ">
-                  <a
-                    href="https://www.linkedin.com/in/niko-auer-463195bb/"
-                    target="_black"
-                  >
-                    <img src={email} className="h-12" alt="linkedin Logo" />
-                  </a>
-                </span>
-                <div class="ms-5 sm:ms-8">
-                  <h3 class="text-base sm:text-lg font-semibold text-blue-600 ">
-                    Email
-                  </h3>
-                  <p class="mt-1 text-gray-600 ">
-                    niko.auer.developer@gmail.com
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="flex flex-wrap lg:justify-between-mx-4">
+        <div className="w-full lg:w-1/2 xl:w-6/10 px-4">
+  <div className="max-w-[570px] mb-12 lg:mb-0">
+    <span className="block mb-4 text-base text-primary font-semibold">
+      Contacts
+    </span>
+    <h2 className="mb-6 uppercase font-bold text-[32px] sm:text-[40px] lg:text-[36px] xl:text-[40px]">
+      GET IN TOUCH WITH <span className="text-blue-600">ME</span>
+    </h2>
+    <p className="text-base text-body-color leading-relaxed mb-9">
+      Leave a message and I will get back to you soon. Otherwise, feel free to
+      contact me or look at my work on my Github, LinkedIn, or Email.
+    </p>
+
+    {/* contact details */}
+    <div className="flex-col">
+
+      <div className="flex items-center mb-4 ml-[20px]">
+        <span className="flex-shrink-0 inline-flex justify-center items-center w-[60px] h-[60px] rounded-full border border-gray-200 bg-white shadow-md">
+          <a
+            href="https://www.linkedin.com/in/niko-auer-463195bb/"
+            target="_black"
+          >
+            <img src={linkedin} className="h-12" alt="linkedin Logo" />
+          </a>
+        </span>
+        <div className="ms-5 sm:ms-8">
+          <a
+            href="https://www.linkedin.com/in/niko-auer-463195bb/"
+            target="_black"
+          >
+            <h3 className="text-base sm:text-lg font-semibold text-blue-600">
+              LinkedIn
+            </h3>
+          </a>
+        </div>
+      </div>
+
+      <div className="flex items-center mb-4 ml-[20px]">
+        <span className="flex-shrink-0 inline-flex justify-center items-center w-[60px] h-[60px] rounded-full border border-gray-200 bg-white shadow-md">
+          <a href="https://github.com/nikoauer" target="_black">
+            <img src={github} className="h-12" alt="github Logo" />
+          </a>
+        </span>
+        <div className="ms-5 sm:ms-8">
+          <a href="https://github.com/nikoauer" target="_black">
+            <h3 className="text-base sm:text-lg font-semibold text-blue-600">
+              Github
+            </h3>
+          </a>
+          <p className="mt-1 text-gray-600"></p>
+        </div>
+      </div>
+
+      <div className="flex items-center ml-[20px]">
+        <span className="flex-shrink-0 inline-flex justify-center items-center w-[60px] h-[60px] rounded-full border border-gray-200 bg-white shadow-md">
+          <img src={email} className="h-12" alt="Email Logo" />
+        </span>
+        <div className="ms-5 sm:ms-8">
+          <h3 className="text-base sm:text-lg font-semibold text-blue-600">
+            Email
+          </h3>
+          <p className="mt-1 text-gray-600">
+            niko.auer.developer@gmail.com
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
           <div className="w-full lg:w-1/2 xl:w-5/12 px-4">
             <div className="bg-white relative rounded-lg p-8 sm:p-12 shadow-lg">
               <form>
