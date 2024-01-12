@@ -83,6 +83,7 @@ export default function ContactPage() {
                 <div className="mb-6">
                 <input type="hidden" name="access_key" value="1f0d15e7-785b-4223-a949-0bc7ed3629f2" />
                   <input
+                  name="Name"
                     type="text"
                     placeholder="Your Name"
                     className="
@@ -100,6 +101,7 @@ export default function ContactPage() {
                 </div>
                 <div className="mb-6">
                   <input
+                  name="Email"
                     type="email"
                     placeholder="Your Email"
                     className="
@@ -117,6 +119,7 @@ export default function ContactPage() {
                 </div>
                 <div className="mb-6">
                   <input
+                  name="Phone"
                     type="text"
                     placeholder="Your Phone"
                     className="
@@ -135,6 +138,7 @@ export default function ContactPage() {
                 <div className="mb-6">
                   <textarea
                     rows="6"
+                    name="Message"
                     placeholder="Your Message"
                     className="
                         w-full
