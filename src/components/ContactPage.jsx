@@ -79,8 +79,9 @@ export default function ContactPage() {
 
           <div className="w-full lg:w-1/2 xl:w-5/12 px-4">
             <div className="bg-white relative rounded-lg p-8 sm:p-12 shadow-lg">
-              <form>
+              <form action="https://api.web3forms.com/submit" method="POST">
                 <div className="mb-6">
+                <input type="hidden" name="access_key" value="1f0d15e7-785b-4223-a949-0bc7ed3629f2" />
                   <input
                     type="text"
                     placeholder="Your Name"
