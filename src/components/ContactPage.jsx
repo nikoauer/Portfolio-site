@@ -27,7 +27,8 @@ export default function ContactPage() {
         <span className="flex-shrink-0 inline-flex justify-center items-center w-[60px] h-[60px] rounded-full border border-gray-200 bg-white shadow-md">
           <a
             href="https://www.linkedin.com/in/niko-auer-463195bb/"
-            target="_black"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <img src={linkedin} className="h-12" alt="linkedin Logo" />
           </a>
@@ -35,7 +36,8 @@ export default function ContactPage() {
         <div className="ms-5 sm:ms-8">
           <a
             href="https://www.linkedin.com/in/niko-auer-463195bb/"
-            target="_black"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <h3 className="text-base sm:text-lg font-semibold text-blue-600">
               LinkedIn
@@ -46,12 +48,12 @@ export default function ContactPage() {
 
       <div className="flex items-center mb-4 ml-[20px]">
         <span className="flex-shrink-0 inline-flex justify-center items-center w-[60px] h-[60px] rounded-full border border-gray-200 bg-white shadow-md">
-          <a href="https://github.com/nikoauer" target="_black">
+          <a href="https://github.com/nikoauer" target="_blank" rel="noopener noreferrer">
             <img src={github} className="h-12" alt="github Logo" />
           </a>
         </span>
         <div className="ms-5 sm:ms-8">
-          <a href="https://github.com/nikoauer" target="_black">
+          <a href="https://github.com/nikoauer" target="_blank" rel="noopener noreferrer">
             <h3 className="text-base sm:text-lg font-semibold text-blue-600">
               Github
             </h3>
@@ -62,7 +64,7 @@ export default function ContactPage() {
 
       <div className="flex items-center ml-[20px]">
         <span className="flex-shrink-0 inline-flex justify-center items-center w-[60px] h-[60px] rounded-full border border-gray-200 bg-white shadow-md">
-          <img src={email} className="h-12" alt="Email Logo" />
+          <img src={email} className="h-12" alt="Email Logo"/>
         </span>
         <div className="ms-5 sm:ms-8">
           <h3 className="text-base sm:text-lg font-semibold text-blue-600">
