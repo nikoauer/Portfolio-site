@@ -7,6 +7,7 @@ import {
 import rockfit from "../assets/rockfit.png";
 import weather  from "../assets/weather.png"
 import book from "../assets/books.png"
+import tech from "../assets/tech.png"
 
 const features = [
   {
@@ -50,17 +51,17 @@ const weatherinfo = [
     {
       name: "How does it work?",
       description:
-        "A user can input a genre into the search bar and then a short list of the books that fall under that genre will be displayed along with the author, title and cover",
+        "A user can input a genre into the search bar and then a short list of the books that fall under that genre will be displayed along with the author, title and cover.",
       icon: Cog6ToothIcon,
     },
     {
       name: "Why?",
-      description: "Customers may not know what book they want but this provides a collection of books if the customer has a specific topic or genre interest",
+      description: "Customers may not know what book they want but this provides a collection of books if the customer has a specific topic or genre interest.",
       icon: FaceSmileIcon,
     },
     {
       name: "Tools used:",
-      description: "Gutenedex API, HTML, CSS, Javascript",
+      description: "Gutenedex API, HTML, CSS, Javascript.",
       icon: WrenchIcon,
     },
   ];
@@ -69,17 +70,17 @@ const weatherinfo = [
     {
       name: "How does it work?",
       description:
-        "A user simply types in the name of a major city and clicks on search and the weather will be displayed.",
+        "A user can sign up or login and create a post and if another user is logged in then they have the ability to post a comment however if they are not signed up they cannot.",
       icon: Cog6ToothIcon,
     },
     {
       name: "Why?",
-      description: "It provides a practical solution to a real world issue, which is checking the weather in your city and seeing how best to prepare for the day or week.",
+      description: "This simulates what it would be like to construct blog or possibly similar social media site, where authority and authentication is monitored and controlled for the user to use the application safely.",
       icon: FaceSmileIcon,
     },
     {
       name: "Tools used:",
-      description: "Openweather API, HTML, CSS, Javascript",
+      description: "Openweather API, HTML, CSS, Javascript, mySQL, Sequalize, bcrypt",
       icon: WrenchIcon,
     },
   ];
@@ -87,14 +88,12 @@ const weatherinfo = [
 export default function Projectspage() {
   return (
     <>
-      <div className="overflow-hidden bg-white py-24 sm:py-32">
+      <div className="overflow-hidden bg-white py-24 sm:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div className="lg:pr-8 lg:pt-4">
               <div className="lg:max-w-lg">
-                <h2 className="text-base font-semibold leading-7 text-blue-600">
-                  Shoe Calculator
-                </h2>
+                
                 <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl hover:text-blue-600">
                   <a
                     href="https://shoe-calculator-frontend.onrender.com/"
@@ -151,7 +150,7 @@ export default function Projectspage() {
 
 
 {/* reverse */}
-      <div className="overflow-hidden bg-white py-24 sm:py-32">
+      <div className="overflow-hidden bg-white py-24 sm:py-20">
   <div className="mx-auto max-w-7xl px-6 lg:px-8">
     <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
       <img
@@ -216,7 +215,7 @@ export default function Projectspage() {
 
 
 
-      <div className="overflow-hidden bg-white py-24 sm:py-32">
+      <div className="overflow-hidden bg-white py-24 sm:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div className="lg:pr-8 lg:pt-4">
@@ -275,17 +274,17 @@ export default function Projectspage() {
 
 
 {/* reverse */}
-      <div className="overflow-hidden bg-white py-24 sm:py-32">
+      <div className="overflow-hidden bg-white py-24 sm:py-20">
   <div className="mx-auto max-w-7xl px-6 lg:px-8">
     <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
       <img
-        src={weather}
+        src={tech}
         alt="weather dashboard screenshot"
         className="max-w-full h-auto rounded-xl shadow-xl ring-1 ring-gray-400/10"
       />
       <div className="lg:pl-8 lg:pt-4">
         <div className="lg:max-w-lg">
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl hover:text-blue-600">
+          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Techademy
           </p>
           <button
@@ -304,7 +303,7 @@ export default function Projectspage() {
           </button>
 
           <p className="mt- text-lg leading-8 text-gray-600">
-          This application allows users to search for the weather of major cities around the work adn to save the past searches. Providing the temperature, Wind speed, Humidity and rain for forecast for today and the following 4 days. 
+          This application is a mock blog site, where a user would be able to make an account a post blogs about technology and other users can comment on these.
           </p>
           <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
             {bloginfo.map((feature) => (
