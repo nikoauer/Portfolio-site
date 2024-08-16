@@ -1,68 +1,80 @@
-import logo from '../assets/logo3.svg';
+import logo from "../assets/logo3.svg";
+import {
+  Disclosure,
+  DisclosureButton,
+  DisclosurePanel,
+} from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 export default function Navbar() {
   return (
-    <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white border-b border-gray-200 text-sm py-3 sm:py-0">
-      <nav
-        className="relative max-w-7xl w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
-        aria-label="Global"
-      >
-        <div className="flex items-center justify-between">
-          <a className="flex-none text-xl font-semibold dark:text-white" href="/" aria-label="Brand">
-            <img src={logo} alt="logo" className="h-20" />
-          </a>
-          <div className="sm:hidden">
-            <button
-              type="button"
-              className="hs-collapse-toggle w-9 h-9 flex justify-center items-center text-sm font-semibold rounded-lg border border-gray-400 text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
-              data-hs-collapse="#navbar-collapse-with-animation"
-              aria-controls="navbar-collapse-with-animation"
-              aria-label="Toggle navigation"
-            >
-              <svg
-                className="hs-collapse-open:hidden w-4 h-4"
-                width="16"
-                height="16"
-                fill="currentColor"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-                />
-              </svg>
-              <svg
-                className="hs-collapse-open:block flex-shrink-0 hidden w-4 h-4"
-                width="16"
-                height="16"
-                fill="currentColor"
-                viewBox="0 0 16 16"
-              >
-                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-              </svg>
-            </button>
+    <Disclosure as="nav" className="bg-white shadow">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex h-24 items-center justify-between">
+          <div className="flex items-center">
+            <img alt="Niko Auer" src={logo} className="h-16 w-auto" />
           </div>
-        </div>
-        <div
-          id="navbar-collapse-with-animation"
-          className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block"
-        >
-          <div className="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:ps-7">
-            <a className="font-medium text-blue-700 hover:text-blue-500 sm:py-6" href="#home" aria-current="page">
-              Home
-            </a>
-            <a className="font-medium text-gray-700 hover:text-gray-500 sm:py-6" href="#about">
+          <div className="hidden sm:flex sm:space-x-8">
+            <a
+              className="font-medium text-gray-700 hover:text-gray-500 sm:py-6"
+              href="#about"
+            >
               About
             </a>
-            <a className="font-medium text-gray-700 hover:text-gray-500 sm:py-6" href="#projects">
+            <a
+              className="font-medium text-gray-700 hover:text-gray-500 sm:py-6"
+              href="#projects"
+            >
               Projects
             </a>
-            <a className="font-medium text-gray-700 hover:text-gray-500 sm:py-6" href="#contact">
+            <a
+              className="font-medium text-gray-700 hover:text-gray-500 sm:py-6"
+              href="#contact"
+            >
               Contact
             </a>
           </div>
+          <div className="-mr-2 flex items-center sm:hidden">
+            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+              <span className="sr-only">Open main menu</span>
+              <Bars3Icon
+                aria-hidden="true"
+                className="block h-6 w-6 group-data-[open]:hidden"
+              />
+              <XMarkIcon
+                aria-hidden="true"
+                className="hidden h-6 w-6 group-data-[open]:block"
+              />
+            </DisclosureButton>
+          </div>
         </div>
-      </nav>
-    </header>
+      </div>
+
+      <DisclosurePanel className="sm:hidden">
+        <div className="space-y-1 pb-3 pt-2">
+          <DisclosureButton
+            as="a"
+            href="#about"
+            className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
+          >
+            About
+          </DisclosureButton>
+          <DisclosureButton
+            as="a"
+            href="#projects"
+            className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
+          >
+            Projects
+          </DisclosureButton>
+          <DisclosureButton
+            as="a"
+            href="#contact"
+            className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
+          >
+            Contact
+          </DisclosureButton>
+        </div>
+      </DisclosurePanel>
+    </Disclosure>
   );
 }
