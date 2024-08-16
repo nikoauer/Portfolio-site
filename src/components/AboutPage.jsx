@@ -24,7 +24,7 @@ import logo from "../assets/logo3.svg"
 
 export default function AboutPage() {
   return (
-    <>
+    <div id="about">
       <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         <div className="md:grid md:grid-cols-2 md:gap-10 lg:gap-16 md:items-center">
           <div className="hidden md:block mb-24 md:mb-0 sm:px-6">
@@ -443,6 +443,6 @@ export default function AboutPage() {
   </div>
 </footer>
       </main>
-    </>
+    </div>
   );
 }

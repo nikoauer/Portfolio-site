@@ -1,17 +1,33 @@
 import Navbar from './components/Navbar'
 import { Outlet } from 'react-router-dom';
 import './App.css'
-import { IStaticMethods } from "preline/preline";
+import HomePage from './components/HomePage.jsx';
+import AboutPage from './components/AboutPage.jsx';
+import ContactPage from './components/ContactPage.jsx';
+import ProjectsPage from './components/ProjectsPage.jsx';
+
 
 
 function App() {
-
   return (
-    <>
-    <Navbar />
-    <Outlet />
-    </>
-  )
+    <div>
+      <Navbar />
+      <main>
+        <section id="home">
+          <HomePage />
+        </section>
+        <section id="about">
+          <AboutPage />
+        </section>
+        <section id="projects">
+          <ProjectsPage />
+        </section>
+        <section id="contact">
+          <ContactPage />
+        </section>
+      </main>
+    </div>
+  );
 }
 
-export default App
+export default App;
