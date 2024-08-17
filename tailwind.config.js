@@ -6,9 +6,9 @@ export default {
     'node_modules/preline/dist/*.js'
   ],
   theme: {
+  },
+  variants: {
     extend: {},
   },
-  plugins: [
-    require('preline/plugin')
-  ],
-}
+  plugins: [],
+};
