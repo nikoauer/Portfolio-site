@@ -21,77 +21,23 @@ import redux from "../assets/redux.svg";
 import Resume from "../assets/Niko Auer Resume.pdf"
 import linkedin from "../assets/linkedin.svg"
 import logo from "../assets/logo3.svg"
+import backgroundShape from "../assets/background shape.png"
+import backgroundShape2 from "../assets/background shape2.png"
 
 export default function AboutPage() {
   return (
-    <div id="about">
+    <div id="about" className="bg-[#fffef5]">
       <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-        <div className="md:grid md:grid-cols-2 md:gap-10 lg:gap-16 md:items-center">
+        <div className="md:grid md:grid-cols-2 md:gap-10 lg:gap-16 md:items-center mt-32">
           <div className="hidden md:block mb-24 md:mb-0 sm:px-6">
             <div className="relative">
+            <img src={backgroundShape2} alt="" className="absolute top-32 right-24 -z-[1]" />
               <img className="rounded-xl shadow-xl" src={portrait} alt="portrait" />
-              <div className="absolute bottom-0 start-0 -z-[1] translate-y-10 -translate-x-14">
-                <svg
-                  className="max-w-[10rem] h-auto text-blue-200"
-                  width="696"
-                  height="653"
-                  viewBox="0 0 696 653"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle cx="72.5" cy="29.5" r="29.5" fill="#088F8F" />
-                  <circle cx="72.5" cy="29.5" r="29.5" fill="#6495ED" />
-                  <circle cx="171.5" cy="29.5" r="29.5" fill="#6495ED" />
-                  <circle cx="270.5" cy="29.5" r="29.5" fill="#6495ED" />
-                  <circle cx="369.5" cy="29.5" r="29.5" fill="#6495ED" />
-                  <circle cx="468.5" cy="29.5" r="29.5" fill="#6495ED" />
-                  <circle cx="567.5" cy="29.5" r="29.5" fill="#6495ED" />
-                  <circle cx="666.5" cy="29.5" r="29.5" fill="#6495ED" />
-                  <circle cx="29.5" cy="128.5" r="29.5" fill="#6495ED" />
-                  <circle cx="128.5" cy="128.5" r="29.5" fill="#6495ED" />
-                  <circle cx="227.5" cy="128.5" r="29.5" fill="#6495ED" />
-                  <circle cx="326.5" cy="128.5" r="29.5" fill="#6495ED" />
-                  <circle cx="425.5" cy="128.5" r="29.5" fill="#6495ED" />
-                  <circle cx="524.5" cy="128.5" r="29.5" fill="#6495ED" />
-                  <circle cx="623.5" cy="128.5" r="29.5" fill="#6495ED" />
-                  <circle cx="72.5" cy="227.5" r="29.5" fill="#6495ED" />
-                  <circle cx="171.5" cy="227.5" r="29.5" fill="#6495ED" />
-                  <circle cx="270.5" cy="227.5" r="29.5" fill="#6495ED" />
-                  <circle cx="369.5" cy="227.5" r="29.5" fill="#6495ED" />
-                  <circle cx="468.5" cy="227.5" r="29.5" fill="#6495ED" />
-                  <circle cx="567.5" cy="227.5" r="29.5" fill="#6495ED" />
-                  <circle cx="666.5" cy="227.5" r="29.5" fill="#6495ED" />
-                  <circle cx="29.5" cy="326.5" r="29.5" fill="#6495ED" />
-                  <circle cx="128.5" cy="326.5" r="29.5" fill="#6495ED" />
-                  <circle cx="227.5" cy="326.5" r="29.5" fill="#6495ED" />
-                  <circle cx="326.5" cy="326.5" r="29.5" fill="#6495ED" />
-                  <circle cx="425.5" cy="326.5" r="29.5" fill="#6495ED" />
-                  <circle cx="524.5" cy="326.5" r="29.5" fill="#6495ED" />
-                  <circle cx="623.5" cy="326.5" r="29.5" fill="#6495ED" />
-                  <circle cx="72.5" cy="425.5" r="29.5" fill="#6495ED" />
-                  <circle cx="171.5" cy="425.5" r="29.5" fill="#6495ED" />
-                  <circle cx="270.5" cy="425.5" r="29.5" fill="#6495ED" />
-                  <circle cx="369.5" cy="425.5" r="29.5" fill="#6495ED" />
-                  <circle cx="468.5" cy="425.5" r="29.5" fill="#6495ED" />
-                  <circle cx="567.5" cy="425.5" r="29.5" fill="#6495ED" />
-                  <circle cx="666.5" cy="425.5" r="29.5" fill="#6495ED" />
-                  <circle cx="29.5" cy="524.5" r="29.5" fill="#6495ED" />
-                  <circle cx="128.5" cy="524.5" r="29.5" fill="#6495ED" />
-                  <circle cx="227.5" cy="524.5" r="29.5" fill="#6495ED" />
-                  <circle cx="326.5" cy="524.5" r="29.5" fill="#6495ED" />
-                  <circle cx="425.5" cy="524.5" r="29.5" fill="#6495ED" />
-                  <circle cx="524.5" cy="524.5" r="29.5" fill="#6495ED" />
-                  <circle cx="623.5" cy="524.5" r="29.5" fill="#6495ED" />
-                  <circle cx="72.5" cy="623.5" r="29.5" fill="#6495ED" />
-                  <circle cx="171.5" cy="623.5" r="29.5" fill="#6495ED" />
-                  <circle cx="270.5" cy="623.5" r="29.5" fill="#6495ED" />
-                  <circle cx="369.5" cy="623.5" r="29.5" fill="#6495ED" />
-                  <circle cx="468.5" cy="623.5" r="29.5" fill="#6495ED" />
-                  <circle cx="567.5" cy="623.5" r="29.5" fill="#6495ED" />
-                  <circle cx="666.5" cy="623.5" r="29.5" fill="#6495ED" />
-                </svg>
+              <div className="relative  -z-[2]">
+                <img src={backgroundShape} alt="" className="absolute bottom-44 left-14" />
               </div>
             </div>
+                
           </div>
 
           <div>
@@ -110,24 +56,23 @@ export default function AboutPage() {
                   fill="currentColor"
                 />
               </svg>
+              
 
               <div className="relative z-10">
-                <p className="text-xs font-semibold text-blue-600 tracking-wide uppercase mb-3 ">
-                  Full-stack Web Developer
+                <p className="text-md font-semibold text-indigo-500 tracking-wide uppercase mb-3 ">
+                Hi, I am Niko Auer
                 </p>
 
                 <p className="text-xl font-medium italic text-gray-800 md:text-2xl md:leading-normal xl:text-3xl xl:leading-normal">
-                  Hi, I am Niko Auer! I am a passionate full-stack developer interested
-                  in developing solutions for modern frontend and backend
-                  projects.
+With 10 years of experience in television broadcast and photography, I've contributed to projects ranging from community events like Tropfest to global spectacles such as the Australian Open, Qatar FIFA World Cup 2022, and Formula 1. Now, I’m diving into full-stack web development, driven by the thrill of learning and solving real-world problems. I aim to bring my unique perspective from the visual arts to web development. When I’m not coding, you’ll find me outdoors, rock climbing or hiking.
                 </p>
               </div>
 
-              <footer className="mt-6">
+              <footer className="mt-6 flex justify-center">
                 <div className="flex items-center">
                   <div className="md:hidden flex-shrink-0">
                     <img
-                      className="h-12 w-12 rounded-full"
+                      className="h-32 w-32 rounded-full"
                       src={portrait}
                       alt="Image Description"
                     />
@@ -140,29 +85,6 @@ export default function AboutPage() {
       </div>
       <main id="content" role="main">
         <div className="text-center py-10 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-          <h1 className="block text-2xl font-bold text-blue-600 sm:text-4xl">
-            So who am I?
-          </h1>
-          <p className="mt-3 text-lg text-gray-600">
-            I come with a rich background of 10 years in television broadcast
-            and photography. My career has allowed me work on small community
-            projects such as Tropfest to large scale projects such as the
-            Australian Open Tennis, Qatar FIFA World Cup 2022, Formula 1 and
-            many more.
-            <br />
-            <br />
-            Now, I am on an exciting journey, transitioning into the realm of
-            full-stack web development. The learning process, coupled with the
-            thrill of implementing problem-solving solutions, is what truly
-            captivates me in this new venture.
-            <br />
-            <br />I find immense reward in acquiring coding skills and applying
-            them to real-world challenges. My goal is to contribute to upcoming
-            web development solutions and projects, bringing a unique
-            perspective shaped by years in the visual arts. If I am not coding
-            or working I will be spending my town outdoors rock climbing or
-            hiking.
-          </p>
           <button type="button" className="shadow-xl py-3 px-4 my-5 inline-flex items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
   <a href={Resume} download={Resume}>Download Resume</a>
 </button>
