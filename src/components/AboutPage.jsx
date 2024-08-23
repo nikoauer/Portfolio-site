@@ -1,8 +1,8 @@
 import portrait from "../assets/portrait2.jpeg";
 import Resume from "../assets/Niko Auer Resume.pdf"
 
-import backgroundShape from "../assets/background shape.png"
-import backgroundShape2 from "../assets/background shape2.png"
+import backgroundShape from "../assets/backgroundshape.svg"
+import backgroundShape2 from "../assets/backgroundshape2.svg"
 import Skills from "./Skills";
 
 export default function AboutPage() {
@@ -12,10 +12,10 @@ export default function AboutPage() {
         <div className="md:grid md:grid-cols-2 md:gap-10 lg:gap-16 md:items-center mt-32">
           <div className="hidden md:block mb-24 md:mb-0 sm:px-6">
             <div className="relative">
-            <img src={backgroundShape2} alt="" className="absolute top-32 right-24 -z-[1]" />
+            <img src={backgroundShape} alt="" className="absolute top-56 right-56 -z-[1]" />
               <img className="rounded-xl shadow-xl" src={portrait} alt="portrait" />
-              <div className="relative  -z-[2]">
-                <img src={backgroundShape} alt="" className="absolute bottom-44 left-14" />
+              <div className="relative -z-[2]">
+                <img src={backgroundShape2} alt="" className="absolute bottom-44 left-36" />
               </div>
             </div>
           </div>
@@ -23,7 +23,7 @@ export default function AboutPage() {
           <div>
             <blockquote className="relative">
               <svg
-                className="absolute top-0 start-0 transform -translate-x-8 -translate-y-4 h-24 w-24 text-gray-200"
+                className="absolute top-0 start-0 transform -translate-x-8 -translate-y-4 h-24 w-24 text-indigo-200"
                 width="16"
                 height="16"
                 viewBox="0 0 16 16"
