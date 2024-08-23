@@ -1,5 +1,3 @@
-import logo from "../assets/portrait.jpg";
-import backdrop from "../assets/backdrop.svg";
 import ArrowDown from "./ArrowDown.jsx";
 import video from "../assets/homepageVideo.mp4"
 import SlidingText from "./SlidingText.jsx";

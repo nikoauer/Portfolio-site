@@ -1,33 +1,14 @@
 import portrait from "../assets/portrait2.jpeg";
-import bootstrap from "../assets/bootstrap.svg";
-import express from "../assets/express.svg";
-import figma from "../assets/figma.svg";
-import git from "../assets/git.svg";
-import css from "../assets/css.svg";
-import github from "../assets/github.svg";
-import heroku from "../assets/heroku.svg";
-import html from "../assets/html.svg";
-import javascript from "../assets/javascript.svg";
-import jest from "../assets/jest.svg";
-import jquery from "../assets/jquery.svg";
-import mongodb from "../assets/mongodb.svg";
-import mysql from "../assets/mySQL.svg";
-import netlify from "../assets/netlify.svg";
-import react from "../assets/react.svg";
-import Sass from "../assets/Sass.svg";
-import Tailwind from "../assets/tailwind.svg";
-import graphql from "../assets/graphql.svg";
-import redux from "../assets/redux.svg";
 import Resume from "../assets/Niko Auer Resume.pdf"
-import linkedin from "../assets/linkedin.svg"
-import logo from "../assets/logo3.svg"
+
 import backgroundShape from "../assets/background shape.png"
 import backgroundShape2 from "../assets/background shape2.png"
+import Skills from "./Skills";
 
 export default function AboutPage() {
   return (
-    <div id="about" className="bg-[#fffef5]">
-      <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <div id="about" className="" >
+      <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto isolate min-h-screen w-full">
         <div className="md:grid md:grid-cols-2 md:gap-10 lg:gap-16 md:items-center mt-32">
           <div className="hidden md:block mb-24 md:mb-0 sm:px-6">
             <div className="relative">
@@ -37,7 +18,6 @@ export default function AboutPage() {
                 <img src={backgroundShape} alt="" className="absolute bottom-44 left-14" />
               </div>
             </div>
-                
           </div>
 
           <div>
@@ -82,289 +62,18 @@ With 10 years of experience in television broadcast and photography, I've contri
             </blockquote>
           </div>
         </div>
-      </div>
-      <main id="content" role="main">
         <div className="text-center py-10 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-          <button type="button" className="shadow-xl py-3 px-4 my-5 inline-flex items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
-  <a href={Resume} download={Resume}>Download Resume</a>
-</button>
+        <button type="button" className=" shadow-lg bg-gradient-to-r text-white px-4 py-2 text-xl rounded-full font-medium focus:ring ring-black ring-opacity-10 gradient element-to-rotate">
+          <a href={Resume} download={Resume}>Download Resume</a>
+        </button>
         </div>
+      </div>
+
 
         {/* grid of skills */}
         <div className="text-center py-1 px-1 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-          <h1 className="block text-2xl font-bold text-black sm:text-4xl">
-            Skills
-          </h1>
         </div>
-        <div className="flex justify-center">
-          <div className="max-w-[80rem] px-1 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center gap-6 md:gap-10">
-              <div className="w-48 h-20 bg-white shadow-xl rounded-lg p-3">
-                <div className="flex items-center gap-x-4 mb-3">
-                  <div className="inline-flex justify-center items-center w-[62px] h-[62px] rounded-full border-4 border-blue-50 bg-blue-100 ">
-                    <img src={bootstrap} alt="bootstrap" />
-                  </div>
-                  <div className="flex-shrink-0">
-                    <h3 className="block text-lg font-semibold text-gray-800 ">
-                      Bootstrap
-                    </h3>
-                  </div>
-                </div>
-              </div>
-              <div className="w-48 h-20 bg-white shadow-xl rounded-lg p-3">
-                <div className="flex items-center gap-x-4 mb-3">
-                  <div className="inline-flex justify-center items-center w-[62px] h-[62px] rounded-full border-4 border-blue-50 bg-blue-100 ">
-                    <img src={express} alt="express" />
-                  </div>
-                  <div className="flex-shrink-0">
-                    <h3 className="block text-lg font-semibold text-gray-800 ">
-                      Expressjs
-                    </h3>
-                  </div>
-                </div>
-              </div>
-              <div className="w-48 h-20 bg-white shadow-xl rounded-lg p-3">
-                <div className="flex items-center gap-x-4 mb-3">
-                  <div className="inline-flex justify-center items-center w-[62px] h-[62px] rounded-full border-4 border-blue-50 bg-blue-100 ">
-                    <img src={figma} alt="figma" />
-                  </div>
-                  <div className="flex-shrink-0">
-                    <h3 className="block text-lg font-semibold text-gray-800 ">
-                      Figma
-                    </h3>
-                  </div>
-                </div>
-              </div>
-              <div className="w-48 h-20 bg-white shadow-xl rounded-lg p-3">
-                <div className="flex items-center gap-x-4 mb-3">
-                  <div className="inline-flex justify-center items-center w-[62px] h-[62px] rounded-full border-4 border-blue-50 bg-blue-100 ">
-                    <img src={git} alt="Git" />
-                  </div>
-                  <div className="flex-shrink-0">
-                    <h3 className="block text-lg font-semibold text-gray-800 ">
-                      Git
-                    </h3>
-                  </div>
-                </div>
-              </div>
-              <div className="w-48 h-20 bg-white shadow-xl rounded-lg p-3">
-                <div className="flex items-center gap-x-4 mb-3">
-                  <div className="inline-flex justify-center items-center w-[62px] h-[62px] rounded-full border-4 border-blue-50 bg-blue-100 ">
-                    <img src={css} alt="css" />
-                  </div>
-                  <div className="flex-shrink-0">
-                    <h3 className="block text-lg font-semibold text-gray-800 ">
-                      CSS
-                    </h3>
-                  </div>
-                </div>
-              </div>
-              <div className="w-48 h-20 bg-white shadow-xl rounded-lg p-3">
-                <div className="flex items-center gap-x-4 mb-3">
-                  <div className="inline-flex justify-center items-center w-[62px] h-[62px] rounded-full border-4 border-blue-50 bg-blue-100 ">
-                    <img src={github} alt="Github" />
-                  </div>
-                  <div className="flex-shrink-0">
-                    <h3 className="block text-lg font-semibold text-gray-800 ">
-                      Github
-                    </h3>
-                  </div>
-                </div>
-              </div>
-              <div className="w-48 h-20 bg-white shadow-xl rounded-lg p-3">
-                <div className="flex items-center gap-x-4 mb-3">
-                  <div className="inline-flex justify-center items-center w-[62px] h-[62px] rounded-full border-4 border-blue-50 bg-blue-100 ">
-                    <img src={heroku} alt="heroku" />
-                  </div>
-                  <div className="flex-shrink-0">
-                    <h3 className="block text-lg font-semibold text-gray-800 ">
-                      Heroku
-                    </h3>
-                  </div>
-                </div>
-              </div>
-              <div className="w-48 h-20 bg-white shadow-xl rounded-lg p-3">
-                <div className="flex items-center gap-x-4 mb-3">
-                  <div className="inline-flex justify-center items-center w-[62px] h-[62px] rounded-full border-4 border-blue-50 bg-blue-100 ">
-                    <img src={html} alt="HTML" />
-                  </div>
-                  <div className="flex-shrink-0">
-                    <h3 className="block text-lg font-semibold text-gray-800 ">
-                      HTML
-                    </h3>
-                  </div>
-                </div>
-              </div>
-              <div className="w-48 h-20 bg-white shadow-xl rounded-lg p-3">
-                <div className="flex items-center gap-x-4 mb-3">
-                  <div className="inline-flex justify-center items-center w-[62px] h-[62px] rounded-full border-4 border-blue-50 bg-blue-100 ">
-                    <img src={javascript} className="h-12" alt="javascript" />
-                  </div>
-                  <div className="flex-shrink-0">
-                    <h3 className="block text-lg font-semibold text-gray-800 ">
-                      Javascript
-                    </h3>
-                  </div>
-                </div>
-              </div>
-              <div className="w-48 h-20 bg-white shadow-xl rounded-lg p-3">
-                <div className="flex items-center gap-x-4 mb-3">
-                  <div className="inline-flex justify-center items-center w-[62px] h-[62px] rounded-full border-4 border-blue-50 bg-blue-100 ">
-                    <img src={jest} alt="Jest" />
-                  </div>
-                  <div className="flex-shrink-0">
-                    <h3 className="block text-lg font-semibold text-gray-800 ">
-                      Jest
-                    </h3>
-                  </div>
-                </div>
-              </div>
-              <div className="w-48 h-20 bg-white shadow-xl rounded-lg p-3">
-                <div className="flex items-center gap-x-4 mb-3">
-                  <div className="inline-flex justify-center items-center w-[62px] h-[62px] rounded-full border-4 border-blue-50 bg-blue-100 ">
-                    <img src={jquery} alt="jquery" />
-                  </div>
-                  <div className="flex-shrink-0">
-                    <h3 className="block text-lg font-semibold text-gray-800 ">
-                      Jquery
-                    </h3>
-                  </div>
-                </div>
-              </div>
-              <div className="w-48 h-20 bg-white shadow-xl rounded-lg p-3">
-                <div className="flex items-center gap-x-4 mb-3">
-                  <div className="inline-flex justify-center items-center w-[62px] h-[62px] rounded-full border-4 border-blue-50 bg-blue-100 ">
-                    <img src={mongodb} alt="MongoDB" />
-                  </div>
-                  <div className="flex-shrink-0">
-                    <h3 className="block text-lg font-semibold text-gray-800 ">
-                      MongoDB
-                    </h3>
-                  </div>
-                </div>
-              </div>
-              <div className="w-48 h-20 bg-white shadow-xl rounded-lg p-3">
-                <div className="flex items-center gap-x-4 mb-3">
-                  <div className="inline-flex justify-center items-center w-[62px] h-[62px] rounded-full border-4 border-blue-50 bg-blue-100 ">
-                    <img src={mysql} alt="mySQL" />
-                  </div>
-                  <div className="flex-shrink-0">
-                    <h3 className="block text-lg font-semibold text-gray-800 ">
-                      mySQL
-                    </h3>
-                  </div>
-                </div>
-              </div>
-              <div className="w-48 h-20 bg-white shadow-xl rounded-lg p-3">
-                <div className="flex items-center gap-x-4 mb-3">
-                  <div className="inline-flex justify-center items-center w-[62px] h-[62px] rounded-full border-4 border-blue-50 bg-blue-100 ">
-                    <img src={netlify} alt="netlify" />
-                  </div>
-                  <div className="flex-shrink-0">
-                    <h3 className="block text-lg font-semibold text-gray-800 ">
-                      Netlify
-                    </h3>
-                  </div>
-                </div>
-              </div>
-              <div className="w-48 h-20 bg-white shadow-xl rounded-lg p-3">
-                <div className="flex items-center gap-x-4 mb-3">
-                  <div className="inline-flex justify-center items-center w-[62px] h-[62px] rounded-full border-4 border-blue-50 bg-blue-100 ">
-                    <img src={react} alt="React" />
-                  </div>
-                  <div className="flex-shrink-0">
-                    <h3 className="block text-lg font-semibold text-gray-800 ">
-                      React
-                    </h3>
-                  </div>
-                </div>
-              </div>
-              <div className="w-48 h-20 bg-white shadow-xl rounded-lg p-3">
-                <div className="flex items-center gap-x-4 mb-3">
-                  <div className="inline-flex justify-center items-center w-[62px] h-[62px] rounded-full border-4 border-blue-50 bg-blue-100 ">
-                    <img src={Sass} alt="Sass" />
-                  </div>
-                  <div className="flex-shrink-0">
-                    <h3 className="block text-lg font-semibold text-gray-800 ">
-                      Sass
-                    </h3>
-                  </div>
-                </div>
-              </div>
-              <div className="w-48 h-20 bg-white shadow-xl rounded-lg p-3">
-                <div className="flex items-center gap-x-4 mb-3">
-                  <div className="inline-flex justify-center items-center w-[62px] h-[62px] rounded-full border-4 border-blue-50 bg-blue-100 ">
-                    <img src={Tailwind} alt="Tailwind" />
-                  </div>
-                  <div className="flex-shrink-0">
-                    <h3 className="block text-lg font-semibold text-gray-800 ">
-                      Tailwind
-                    </h3>
-                  </div>
-                </div>
-              </div>
-              <div className="w-48 h-20 bg-white shadow-xl rounded-lg p-3">
-                <div className="flex items-center gap-x-4 mb-3">
-                  <div className="inline-flex justify-center items-center w-[62px] h-[62px] rounded-full border-4 border-blue-50 bg-blue-100 ">
-                    <img src={Sass} alt="Sass" />
-                  </div>
-                  <div className="flex-shrink-0">
-                    <h3 className="block text-lg font-semibold text-gray-800 ">
-                      Sass
-                    </h3>
-                  </div>
-                </div>
-              </div>
-              <div className="w-48 h-20 bg-white shadow-xl rounded-lg p-3">
-                <div className="flex items-center gap-x-4 mb-3">
-                  <div className="inline-flex justify-center items-center w-[62px] h-[62px] rounded-full border-4 border-blue-50 bg-blue-100 ">
-                    <img src={graphql} alt="graphQL" />
-                  </div>
-                  <div className="flex-shrink-0">
-                    <h3 className="block text-lg font-semibold text-gray-800 ">
-                      GraphQL
-                    </h3>
-                  </div>
-                </div>
-              </div>
-              <div className="w-48 h-20 bg-white shadow-xl rounded-lg p-3">
-                <div className="flex items-center gap-x-4 mb-3">
-                  <div className="inline-flex justify-center items-center w-[62px] h-[62px] rounded-full border-4 border-blue-50 bg-blue-100 ">
-                    <img src={redux} alt="Redux" />
-                  </div>
-                  <div className="flex-shrink-0">
-                    <h3 className="block text-lg font-semibold text-gray-800 ">
-                      Redux
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <footer className="w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
-  <div className="text-center">
-    <div>
-    </div>
-    <div className="mt-3">
-      <p className="text-gray-500">Website made by Niko</p>
-      <div className="h-20 flex justify-center">
-      <img src={logo} alt="logo" />
-      </div>
-    </div>
-
-    <div className="mt-3 space-x-3">
-    <a className="inline-flex justify-center items-center w-12 h-12 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition" href="https://www.linkedin.com/in/niko-auer/" target="_blank" rel="noopener noreferrer">
-    <img src={linkedin} alt="Linkedin Logo" className="h-10"/>
-</a>
-
-      <a className="inline-flex justify-center items-center w-12 h-12 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition" href="https://github.com/nikoauer" target="_blank" rel="noopener noreferrer">
-        <img src={github} alt="Github Logo" className="h-10"/>
-      </a>
-    </div>
-  </div>
-</footer>
-      </main>
+        <Skills />
     </div>
   );
 }
