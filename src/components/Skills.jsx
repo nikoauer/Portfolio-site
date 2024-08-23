@@ -19,6 +19,7 @@ import graphql from "../assets/graphql.svg";
 import redux from "../assets/redux.svg";
 import python from "../assets/python.svg"
 import skillsBackground from "../assets/skillsBackground.mp4"
+import skillstitle from "../assets/skillstitle.svg"
 
 
 
@@ -46,14 +47,14 @@ const skillsData = [
 
 export default function Skills () {
   return (
-    <div className="relative isolate min-h-screen w-full">
+    <div id="#Skills" className="relative isolate min-h-screen w-full">
     <video autoPlay muted loop className="absolute -z-10 h-full inset-0 w-full object-cover">
         <source src={skillsBackground} />
       </video>
     <div className="text-center py-1 px-1 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-      <h1 className="block text-2xl font-bold text-black sm:text-4xl ">
-        Skills
-      </h1>
+      <div className="justify-center flex my-16">
+        <img src={skillstitle} alt="" className="h-28 "/>
+      </div>
       <div className="flex ">
         <div className="max-w-[80rem] px-1 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
           <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center gap-6 md:gap-10">
