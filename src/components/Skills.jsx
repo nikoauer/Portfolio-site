@@ -20,13 +20,14 @@ import redux from "../assets/redux.svg";
 import python from "../assets/python.svg"
 import skillsBackground from "../assets/skillsBackground.mp4"
 import skillstitle from "../assets/skillstitle.svg"
+import pandas from "../assets/pandas.svg"
 
 
 
 const skillsData = [
   { name: "Bootstrap", imgSrc: bootstrap },
   { name: "Express.js", imgSrc: express },
-  { name: "Figma", imgSrc: figma },
+  { name: "Pandas", imgSrc: pandas },
   { name: "Git", imgSrc: git },
   { name: "CSS", imgSrc: css },
   { name: "GitHub", imgSrc: github },
@@ -53,7 +54,7 @@ export default function Skills () {
       </video>
     <div className="text-center py-1 px-1 sm:px-6 lg:px-8 max-w-5xl mx-auto">
       <div className="justify-center flex my-16">
-        <img src={skillstitle} alt="" className="h-28 "/>
+        <img src={skillstitle} alt="" className="h-20 md:h-24 lg:h-28"/>
       </div>
       <div className="flex ">
         <div className="max-w-[80rem] px-1 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
