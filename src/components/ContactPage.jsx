@@ -1,63 +1,46 @@
 import linkedin from "../assets/linkedin.svg";
 import github from "../assets/github.svg";
 import email from "../assets/email.svg"
+import contactbackground from "../assets/contactbackground.svg"
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { EnvelopeIcon } from '@heroicons/react/24/outline'
 
-
 export default function ContactPage() {
   return (
-    <>
-<div id="#contact" className="relative isolate bg-white min-h-screen w-full" >
-      <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
+    <div id="contact" className="relative min-h-screen w-full">
+      <div className="absolute inset-0 -z-10">
+        <img
+          src={contactbackground}
+          alt="Contact Background"
+          className="w-full h-full object-cover"
+        />
+      </div>
+
+      <div className="relative mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
         <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
-            <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden bg-gray-100 ring-1 ring-gray-900/10 lg:w-1/2">
-              <svg
-                aria-hidden="true"
-                className="absolute inset-0 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
-              >
-                <defs>
-                  <pattern
-                    x="100%"
-                    y={-1}
-                    id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527"
-                    width={200}
-                    height={200}
-                    patternUnits="userSpaceOnUse"
-                  >
-                    <path d="M130 200V.5M.5 .5H200" fill="none" />
-                  </pattern>
-                </defs>
-                <rect fill="white" width="100%" height="100%" strokeWidth={0} />
-                <svg x="100%" y={-1} className="overflow-visible fill-gray-50">
-                  <path d="M-470.5 0h201v201h-201Z" strokeWidth={0} />
-                </svg>
-                <rect fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" width="100%" height="100%" strokeWidth={0} />
-              </svg>
-            </div>
             <h2 className="text-3xl font-bold tracking-tight text-gray-900">Get in touch</h2>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-6 text-lg leading-8 text-black">
               Want to get in touch? You can simply send me a message using my contact form or get in touch through my LinkedIn or Email.
             </p>
             <dl className="mt-10 space-y-4 text-base leading-7 text-gray-600">
               <div className="flex gap-x-4">
                 <dt className="flex-none">
-                  <span className="sr-only">Address</span>
-                  <FaLinkedin aria-hidden="true" className="h-7 w-6 text-gray-400" />
+                  <span className="sr-only">LinkedIn</span>
+                  <FaLinkedin aria-hidden="true" className="h-7 w-6 text-black" />
                 </dt>
                 <dd>
-                <a href="https://www.linkedin.com/in/niko-auer/" className="hover:text-gray-900">
+                  <a href="https://www.linkedin.com/in/niko-auer/" className="hover:text-gray-700 text-black">
                     LinkedIn
                   </a>
                 </dd>
               </div>
               <div className="flex gap-x-4">
                 <dt className="flex-none">
-                  <FaGithub aria-hidden="true" className="h-7 w-6 text-gray-400" />
+                  <FaGithub aria-hidden="true" className="h-7 w-6 text-black" />
                 </dt>
                 <dd>
-                  <a href="https://github.com/nikoauer" className="hover:text-gray-900">
+                  <a href="https://github.com/nikoauer" className="hover:text-gray-700 text-black">
                     Github
                   </a>
                 </dd>
@@ -65,10 +48,10 @@ export default function ContactPage() {
               <div className="flex gap-x-4">
                 <dt className="flex-none">
                   <span className="sr-only">Email</span>
-                  <EnvelopeIcon aria-hidden="true" className="h-7 w-6 text-gray-400" />
+                  <EnvelopeIcon aria-hidden="true" className="h-7 w-6 text-black" />
                 </dt>
                 <dd>
-                  <a href="mailto:hello@example.com" className="hover:text-gray-900">
+                  <a href="mailto:niko.auer.developer@gmail.com" className="hover:text-gray-700 text-black">
                     niko.auer.developer@gmail.com
                   </a>
                 </dd>
@@ -76,12 +59,13 @@ export default function ContactPage() {
             </dl>
           </div>
         </div>
+
         <form action="https://api.web3forms.com/submit" method="POST" className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
           <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-            <input type="hidden" name="access_key" value="1f0d15e7-785b-4223-a949-0bc7ed3629f2" />
+              <input type="hidden" name="access_key" value="1f0d15e7-785b-4223-a949-0bc7ed3629f2" />
               <div className="sm:col-span-2">
-                <label htmlFor="name" className="block text-sm font-semibold leading-6 text-gray-900">
+                <label htmlFor="name" className="block text-sm font-semibold leading-6 text-black">
                   Name
                 </label>
                 <div className="mt-2.5">
@@ -100,7 +84,7 @@ export default function ContactPage() {
                 </label>
                 <div className="mt-2.5">
                   <input
-                  placeholder="Email"
+                    placeholder="Email"
                     name="email"
                     type="email"
                     autoComplete="email"
@@ -149,6 +133,5 @@ export default function ContactPage() {
         </form>
       </div>
     </div>
-        </>
   );
 }
