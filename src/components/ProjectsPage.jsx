@@ -73,6 +73,9 @@ export default function Projectspage() {
   return (
     <>
     <div>
+    <video autoPlay muted loop className="absolute inset-0 -z-10 h-full w-full object-cover">
+        <source src={projectstitle} />
+      </video>
       <img src={projectstitle} alt="projects title" className="w-full"/>
     </div>
       <div className="overflow-hidden bg-white py-24 sm:py-20">
