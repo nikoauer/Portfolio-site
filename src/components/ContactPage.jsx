@@ -61,7 +61,7 @@ export default function ContactPage() {
         </div>
 
         <form action="https://api.web3forms.com/submit" method="POST" className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
-          <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
+          <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg bg-slate-50 p-5 rounded-lg">
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
               <input type="hidden" name="access_key" value="1f0d15e7-785b-4223-a949-0bc7ed3629f2" />
               <div className="sm:col-span-2">
