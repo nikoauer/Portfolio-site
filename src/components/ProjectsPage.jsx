@@ -6,19 +6,9 @@ import {
 import rockfit from "../assets/rockfit.png";
 import weather from "../assets/weather.png"
 import book from "../assets/books.png"
-import tech from "../assets/tech.png"
-import github from "../assets/github.svg"
-import linkedin from "../assets/linkedin.svg"
-import logo from "../assets/logo3.svg"
 import projectstitle from "../assets/projectstitle.svg"
 
 const features = [
-  {
-    name: "How does it work?",
-    description:
-      "A customer simply inputs their right and left foot measurement in centimeters and it will return recommended shoes and their size.",
-    icon: Cog6ToothIcon,
-  },
   {
     name: "Tools used:",
     description: "Expressjs, Nodejs, MongoDB, React, Bootstrap.",
@@ -72,11 +62,8 @@ const weatherinfo = [
 export default function Projectspage() {
   return (
     <>
-    <div>
-    <video autoPlay muted loop className="absolute inset-0 -z-10 h-full w-full object-cover">
-        <source src={projectstitle} />
-      </video>
-      <img src={projectstitle} alt="projects title" className="w-full"/>
+    <div className="flex justify-center h-96">
+    <img src={projectstitle} alt="" />
     </div>
       <div className="overflow-hidden bg-white py-24 sm:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">

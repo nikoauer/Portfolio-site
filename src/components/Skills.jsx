@@ -1,7 +1,6 @@
 import React from "react";
 import bootstrap from "../assets/bootstrap.svg";
-import express from "../assets/express.svg";
-import figma from "../assets/figma.svg";
+import node from "../assets/express.svg";
 import git from "../assets/git.svg";
 import css from "../assets/css.svg";
 import github from "../assets/github.svg";
@@ -21,12 +20,13 @@ import python from "../assets/python.svg"
 import skillsBackground from "../assets/skillsBackground.mp4"
 import skillstitle from "../assets/skillstitle.svg"
 import pandas from "../assets/pandas.svg"
+import ExpressJS from "../assets/expressJS.svg"
 
 
 
 const skillsData = [
   { name: "Bootstrap", imgSrc: bootstrap },
-  { name: "Express.js", imgSrc: express },
+  { name: "Node.js", imgSrc: node },
   { name: "Pandas", imgSrc: pandas },
   { name: "Git", imgSrc: git },
   { name: "CSS", imgSrc: css },
@@ -40,6 +40,7 @@ const skillsData = [
   { name: "MySQL", imgSrc: mysql },
   { name: "Python", imgSrc: python },
   { name: "React", imgSrc: react },
+  { name: "Express.js", imgSrc: ExpressJS },
   { name: "Sass", imgSrc: Sass },
   { name: "Tailwind", imgSrc: Tailwind },
   { name: "GraphQL", imgSrc: graphql },
