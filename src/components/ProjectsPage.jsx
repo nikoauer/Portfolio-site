@@ -2,6 +2,9 @@ import { WrenchIcon } from "@heroicons/react/20/solid";
 import { FaGithub } from "react-icons/fa";
 import rockfit from "../assets/rockfit.png";
 import projectstitle from "../assets/projectstitle.svg";
+import elementum from "../assets/elementum.png"
+import chatapp from "../assets/chatapp.png"
+import flightdeals from "../assets/flightdeals.png"
 
 const Projects = [
   {
@@ -19,7 +22,7 @@ const Projects = [
     description:
       "An adventure E-commerce store that allows customers to purchase goods through Paypal. Additionally if a user is an admin it allows them to add, remove and change products, users and ",
     tools: "Expressjs, MongoDB, Tailwind CSS, React, Nodejs",
-    imgSrc: rockfit,
+    imgSrc: elementum,
     GithubLink: "https://github.com/nikoauer/Elementum-E-Commerce-Store",
     icon: WrenchIcon,
   },
@@ -28,7 +31,7 @@ const Projects = [
     description:
       "A messenging application that allows users to send messages to anyone on the application (catered towards being used as an internal work messaging application) or create group chats.",
     tools: "React, GetStream API, Tailwind CSS, ",
-    imgSrc: rockfit,
+    imgSrc: chatapp,
     GithubLink: "https://github.com/nikoauer/ChatApplication",
     LiveLink: "https://chatapplication-frontend-cqtl.onrender.com/",
     icon: WrenchIcon,
@@ -38,7 +41,7 @@ const Projects = [
     description:
       "A python script that retrieves the capital cities of countries I wish to travel to from a Google sheet. Populates this google sheet with IATA codes if not already added and proceeds to check the Amadeus API for flights to these cities that are under my desired maximum price. If a flight is found within my desired criteria it will proceed to sending me a WhatsApp message to notify me that a flight has been found with my desired criteria.",
     tools: "Python, Google Sheets, Amadeus API, Twilio, Requests: HTTP for Humans",
-    imgSrc: rockfit,
+    imgSrc: flightdeals,
     GithubLink: "https://github.com/nikoauer/Flight-deal-tracker",
     icon: WrenchIcon,
   },
@@ -67,6 +70,9 @@ export default function Projectspage() {
                   </div>
                   <span className="ml-1">Github Repo</span>
                 </a>
+                <p>
+                  {item.description}
+                </p>
               </div>
               <img
                 src={item.imgSrc}
