@@ -28,13 +28,13 @@ const Projects = [
     projectName: "ChatApp - Messenging site",
     description:
       "A messenging application that allows users to send messages to anyone on the application (catered towards being used as an internal work messaging application) or create group chats.",
-    tools: "React, GetStream API, Tailwind CSS, ",
+    tools: "React, GetStream API, Tailwind CSS",
     imgSrc: chatapp,
     GithubLink: "https://github.com/nikoauer/ChatApplication",
     LiveLink: "https://chatapplication-frontend-cqtl.onrender.com/",
   },
   {
-    projectName: "Flight deal checker",
+    projectName: "Python Script - Flight deal checker",
     description:
       "A python script that retrieves the capital cities of countries I wish to travel to from a Google sheet. Populates this google sheet with IATA codes if not already added and proceeds to check the Amadeus API for flights to these cities that are under my desired maximum price. If a flight is found within my desired criteria it will proceed to sending me a WhatsApp message to notify me that a flight has been found with my desired criteria.",
     tools:
@@ -61,8 +61,8 @@ export default function Projectspage() {
                 <h1
                   className={
                     item.LiveLink
-                      ? "hover:text-indigo-600 text-2xl m-1 font-bold"
-                      : "text-2xl m-1 font-bold"
+                      ? "hover:text-indigo-600 text-2xl m-1 font-light"
+                      : "text-2xl m-1 font-light"
                   }
                 >
                   <a href={item.LiveLink} target="_blank" rel="noreferrer">
@@ -78,10 +78,10 @@ export default function Projectspage() {
                   <div className="w-8 h-8 flex justify-center items-center rounded-full">
                     <FaGithub className="h-6 w-6" />
                   </div>
-                  <span className="ml-1">Github Repo</span>
+                  <span className="ml-1 font-light">Github Repo</span>
                 </a>
-                <p className="m-1">{item.description}</p>
-                <p className="inline-flex m-1">
+                <p className="m-1 font-light">{item.description}</p>
+                <p className="inline-flex m-1 font-light">
                   <WrenchIcon className="h-6 w-6 text-indigo-500 mr-1.5" />
                   {item.tools}
                 </p>

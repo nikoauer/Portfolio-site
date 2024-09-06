@@ -19,11 +19,11 @@ export default function ContactPage() {
       <div className="relative mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
         <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900">Get in touch</h2>
-            <p className="mt-6 text-lg leading-8 text-gray-900">
+            <h2 className="text-3xl font-light tracking-tight text-gray-900">Get in touch</h2>
+            <p className="mt-6 text-lg leading-8 text-gray-900 font-light">
               Want to get in touch? You can simply send me a message using my contact form or get in touch through my LinkedIn or Email.
             </p>
-            <dl className="mt-10 space-y-4 text-base leading-7 text-gray-600">
+            <dl className="mt-5 space-y-4 text-base leading-7 text-gray-600">
               <div className="flex gap-x-4">
                 <dt className="flex-none">
                   <span className="sr-only">LinkedIn</span>
@@ -31,7 +31,7 @@ export default function ContactPage() {
                 </dt>
                 <dd>
                   <a href="https://www.linkedin.com/in/niko-auer/" target="_blank"
-                  rel="noreferrer" className="hover:text-indigo-600 text-gray-900">
+                  rel="noreferrer" className="hover:text-indigo-600 text-gray-900 font-light">
                     LinkedIn
                   </a>
                 </dd>
@@ -42,7 +42,7 @@ export default function ContactPage() {
                 </dt>
                 <dd>
                   <a href="https://github.com/nikoauer" target="_blank"
-                  rel="noreferrer" className="hover:text-indigo-600 text-gray-900">
+                  rel="noreferrer" className="hover:text-indigo-600 text-gray-900 font-light">
                     Github
                   </a>
                 </dd>
@@ -53,7 +53,7 @@ export default function ContactPage() {
                   <EnvelopeIcon aria-hidden="true" className="h-7 w-6 text-black" />
                 </dt>
                 <dd>
-                  <a href="mailto:niko.auer.developer@gmail.com" className="hover:text-indigo-600 text-gray-900">
+                  <a href="mailto:niko.auer.developer@gmail.com" className="hover:text-indigo-600 font-light text-gray-900">
                     niko.auer.developer@gmail.com
                   </a>
                 </dd>
@@ -67,7 +67,7 @@ export default function ContactPage() {
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
               <input type="hidden" name="access_key" value="1f0d15e7-785b-4223-a949-0bc7ed3629f2" />
               <div className="sm:col-span-2">
-                <label htmlFor="name" className="block text-sm font-semibold leading-6 text-black">
+                <label htmlFor="name" className="block text-sm font-normal leading-6 text-black">
                   Name
                 </label>
                 <div className="mt-2.5">
@@ -81,7 +81,7 @@ export default function ContactPage() {
                 </div>
               </div>
               <div className="sm:col-span-2">
-                <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">
+                <label htmlFor="email" className="block text-sm font-normal leading-6 text-gray-900">
                   Email
                 </label>
                 <div className="mt-2.5">
@@ -95,7 +95,7 @@ export default function ContactPage() {
                 </div>
               </div>
               <div className="sm:col-span-2">
-                <label htmlFor="phone-number" className="block text-sm font-semibold leading-6 text-gray-900">
+                <label htmlFor="phone-number" className="block text-sm font-normal leading-6 text-gray-900">
                   Phone number
                 </label>
                 <div className="mt-2.5">
@@ -109,7 +109,7 @@ export default function ContactPage() {
                 </div>
               </div>
               <div className="sm:col-span-2">
-                <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
+                <label htmlFor="message" className="block text-sm font-normal leading-6 text-gray-900">
                   Message
                 </label>
                 <div className="mt-2.5">
@@ -126,7 +126,7 @@ export default function ContactPage() {
             <div className="mt-8 flex justify-end">
               <button
                 type="submit"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-normal text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Send message
               </button>

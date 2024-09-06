@@ -26,7 +26,7 @@ function scrollToTop() {
         <button onClick={scrollToTop} id="scrollToTopButton"
             className="hidden fixed bottom-7 right-7 p-2 
                         text-white rounded-full 
-                       transition duration-300 hover:bg-indigo-700 bg-indigo-500">
+                       transition duration-300 hover:bg-indigo-800 bg-indigo-600">
         <FaArrowUp className="md:w-6 md:h-6 sm:h-7 sm:w-7" alt="Arrow up icon" />
     </button>
       </>  

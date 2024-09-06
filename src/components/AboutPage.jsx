@@ -43,7 +43,7 @@ export default function AboutPage() {
                 Hi, I am Niko Auer
                 </p>
 
-                <p className="text-xl font-medium italic text-gray-800 md:text-2xl md:leading-normal xl:text-3xl xl:leading-normal">
+                <p className="text-xl font-light italic text-gray-800 md:text-2xl md:leading-normal xl:text-3xl xl:leading-normal">
 With 10 years of experience in television broadcast and photography, I've contributed to projects ranging from community events like Tropfest to global spectacles such as the Australian Open, Qatar FIFA World Cup 2022, and Formula 1. Now, I’m diving into full-stack web development, driven by the thrill of learning and solving real-world problems. I aim to bring my unique perspective from the visual arts to web development. When I’m not coding, you’ll find me outdoors, rock climbing or hiking.
                 </p>
               </div>
