@@ -20,7 +20,7 @@ export default function ContactPage() {
         <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900">Get in touch</h2>
-            <p className="mt-6 text-lg leading-8 text-black">
+            <p className="mt-6 text-lg leading-8 text-gray-900">
               Want to get in touch? You can simply send me a message using my contact form or get in touch through my LinkedIn or Email.
             </p>
             <dl className="mt-10 space-y-4 text-base leading-7 text-gray-600">
@@ -30,7 +30,8 @@ export default function ContactPage() {
                   <FaLinkedin aria-hidden="true" className="h-7 w-6 text-black" />
                 </dt>
                 <dd>
-                  <a href="https://www.linkedin.com/in/niko-auer/" className="hover:text-gray-700 text-black">
+                  <a href="https://www.linkedin.com/in/niko-auer/" target="_blank"
+                  rel="noreferrer" className="hover:text-indigo-600 text-gray-900">
                     LinkedIn
                   </a>
                 </dd>
@@ -40,7 +41,8 @@ export default function ContactPage() {
                   <FaGithub aria-hidden="true" className="h-7 w-6 text-black" />
                 </dt>
                 <dd>
-                  <a href="https://github.com/nikoauer" className="hover:text-gray-700 text-black">
+                  <a href="https://github.com/nikoauer" target="_blank"
+                  rel="noreferrer" className="hover:text-indigo-600 text-gray-900">
                     Github
                   </a>
                 </dd>
@@ -51,7 +53,7 @@ export default function ContactPage() {
                   <EnvelopeIcon aria-hidden="true" className="h-7 w-6 text-black" />
                 </dt>
                 <dd>
-                  <a href="mailto:niko.auer.developer@gmail.com" className="hover:text-gray-700 text-black">
+                  <a href="mailto:niko.auer.developer@gmail.com" className="hover:text-indigo-600 text-gray-900">
                     niko.auer.developer@gmail.com
                   </a>
                 </dd>
