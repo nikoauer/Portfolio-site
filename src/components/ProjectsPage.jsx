@@ -57,7 +57,7 @@ export default function Projectspage() {
               className="my-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 "
             >
               <div id="content" className="flex flex-col justify-center">
-                <h1 className="text-2xl m-1 font-bold hover:text-indigo-600">
+                <h1 className={item.LiveLink ? 'hover:text-indigo-600 text-2xl m-1 font-bold' : 'text-2xl m-1 font-bold'}>
                   <a href={item.LiveLink} target="_blank" rel="noopener">{item.projectName}</a>
                   </h1>
                   <a href={item.GithubLink} target="_blank" rel="noopener" className="m-1 inline-flex items-center hover:text-indigo-600">
