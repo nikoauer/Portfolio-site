@@ -63,7 +63,7 @@ With 10 years of experience in television broadcast and photography, I've contri
           </div>
         </div>
         <div className="text-center py-10 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-        <button type="button" className=" shadow-lg bg-gradient-to-r text-white px-4 py-2 text-xl rounded-full font-medium focus:ring ring-black ring-opacity-10 gradient element-to-rotate">
+        <button type="button" className=" shadow-lg bg-gradient-to-r text-white px-4 py-2 text-xl rounded-full font-light focus:ring ring-black ring-opacity-10 gradient element-to-rotate">
           <a href={Resume} download={Resume}>Download Resume</a>
         </button>
         </div>

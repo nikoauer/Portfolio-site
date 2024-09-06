@@ -22,7 +22,7 @@ export default function SlidingText() {
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-medium">
                 <span className="relative h-[1em] w-48 overflow-hidden">
                     <span
-                        className={`absolute h-full w-full leading-none text-indigo-700 transition-opacity duration-500 ${
+                        className={`absolute h-full w-full font-light leading-none text-indigo-700 transition-opacity duration-500 ${
                             fade ? "opacity-100" : "opacity-0"
                         }`}
                     >
