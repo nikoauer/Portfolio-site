@@ -4,6 +4,7 @@ import HomePage from './components/HomePage.jsx';
 import AboutPage from './components/AboutPage.jsx';
 import ContactPage from './components/ContactPage.jsx';
 import ProjectsPage from './components/ProjectsPage.jsx';
+import ScrollUp from './components/ScrollUp.jsx';
 
 
 
@@ -24,6 +25,7 @@ function App() {
         <section id="contact">
           <ContactPage />
         </section>
+        <ScrollUp />
       </main>
     </div>
   );
