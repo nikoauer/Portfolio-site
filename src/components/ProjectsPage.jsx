@@ -2,9 +2,9 @@ import { WrenchIcon } from "@heroicons/react/20/solid";
 import { FaGithub } from "react-icons/fa";
 import rockfit from "../assets/rockfit.png";
 import projectstitle from "../assets/projectstitle.svg";
-import elementum from "../assets/elementum.png"
-import chatapp from "../assets/chatapp.png"
-import flightdeals from "../assets/flightdeals.png"
+import elementum from "../assets/elementum.png";
+import chatapp from "../assets/chatapp.png";
+import flightdeals from "../assets/flightdeals.png";
 
 const Projects = [
   {
@@ -19,7 +19,7 @@ const Projects = [
   {
     projectName: "Elementum - Adventure E-commerce Store",
     description:
-      "An adventure E-commerce store that allows customers to purchase goods through Paypal. Additionally if a user is an admin it allows them to add, remove and change products, users and ",
+      "An adventure E-commerce store that allows customers to purchase goods through Paypal. Additionally customers have features when logged in such as seeing order history, favourite items, change details and add reviews. There is also a huge plethora of features for administrators when logged in, such as removing users, add stock, removing stock, they can view total sales, orders and customers with a graph layout, add categories and delete categories, update payment status of items and changing shipping status.",
     tools: "Expressjs, MongoDB, Tailwind CSS, React, Nodejs",
     imgSrc: elementum,
     GithubLink: "https://github.com/nikoauer/Elementum-E-Commerce-Store",
@@ -37,7 +37,8 @@ const Projects = [
     projectName: "Flight deal checker",
     description:
       "A python script that retrieves the capital cities of countries I wish to travel to from a Google sheet. Populates this google sheet with IATA codes if not already added and proceeds to check the Amadeus API for flights to these cities that are under my desired maximum price. If a flight is found within my desired criteria it will proceed to sending me a WhatsApp message to notify me that a flight has been found with my desired criteria.",
-    tools: "Python, Google Sheets, Amadeus API, Twilio, Requests: HTTP for Humans",
+    tools:
+      "Python, Google Sheets, Amadeus API, Twilio, Requests: HTTP for Humans",
     imgSrc: flightdeals,
     GithubLink: "https://github.com/nikoauer/Flight-deal-tracker",
   },
@@ -47,7 +48,7 @@ export default function Projectspage() {
   return (
     <>
       <div className="flex justify-center text-5xl">
-        <img src={projectstitle} className="-mb-32"></img>
+        <img src={projectstitle} className="-mb-32 max-h-72"></img>
       </div>
       <div className="overflow-hidden bg-white py-24 sm:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -57,18 +58,29 @@ export default function Projectspage() {
               className="my-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 "
             >
               <div id="content" className="flex flex-col justify-center">
-                <h1 className={item.LiveLink ? 'hover:text-indigo-600 text-2xl m-1 font-bold' : 'text-2xl m-1 font-bold'}>
-                  <a href={item.LiveLink} target="_blank" rel="noopener">{item.projectName}</a>
-                  </h1>
-                  <a href={item.GithubLink} target="_blank" rel="noopener" className="m-1 inline-flex items-center hover:text-indigo-600">
+                <h1
+                  className={
+                    item.LiveLink
+                      ? "hover:text-indigo-600 text-2xl m-1 font-bold"
+                      : "text-2xl m-1 font-bold"
+                  }
+                >
+                  <a href={item.LiveLink} target="_blank" rel="noreferrer">
+                    {item.projectName}
+                  </a>
+                </h1>
+                <a
+                  href={item.GithubLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="m-1 inline-flex items-center hover:text-indigo-600"
+                >
                   <div className="w-8 h-8 flex justify-center items-center rounded-full">
                     <FaGithub className="h-6 w-6" />
                   </div>
                   <span className="ml-1">Github Repo</span>
                 </a>
-                <p className="m-1">
-                  {item.description}
-                </p>
+                <p className="m-1">{item.description}</p>
                 <p className="inline-flex m-1">
                   <WrenchIcon className="h-6 w-6 text-indigo-500 mr-1.5" />
                   {item.tools}
