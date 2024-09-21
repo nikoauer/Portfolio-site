@@ -67,7 +67,7 @@ export default function Skills () {
                     <img src={skill.imgSrc} alt={skill.name} />
                   </div>
                   <div className="flex-shrink-0">
-                    <h3 className="block text-lg font-semibold text-gray-800">
+                    <h3 className="block text-lg font-normal text-gray-800">
                       {skill.name}
                     </h3>
                   </div>

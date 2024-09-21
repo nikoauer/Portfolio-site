@@ -1,5 +1,4 @@
 import Navbar from './components/Navbar'
-import './App.css'
 import HomePage from './components/HomePage.jsx';
 import AboutPage from './components/AboutPage.jsx';
 import ContactPage from './components/ContactPage.jsx';
