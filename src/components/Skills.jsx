@@ -20,7 +20,7 @@ import python from "../assets/python.svg"
 import skillsBackground from "../assets/skillsBackground.mp4"
 import skillstitle from "../assets/Skillstitle.svg"
 import pandas from "../assets/pandas.svg"
-import ExpressJS from "../assets/expressJS.svg"
+import ExpressJS from "../assets/ExpressJS.svg"
 
 
 
