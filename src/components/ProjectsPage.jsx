@@ -5,6 +5,7 @@ import projectstitle from "../assets/projectstitle.svg";
 import elementum from "../assets/elementum.png";
 import chatapp from "../assets/chatapp.png";
 import flightdeals from "../assets/flightdeals.png";
+import ABS from "../assets/ABS.png"
 
 const Projects = [
   {
@@ -41,6 +42,15 @@ const Projects = [
       "Python, Google Sheets, Amadeus API, Twilio, Requests: HTTP for Humans",
     imgSrc: flightdeals,
     GithubLink: "https://github.com/nikoauer/Flight-deal-tracker",
+  },
+  {
+    projectName: "Python Script - ABS Data Scraper",
+    description:
+      "This python script was designed for a friend who was attempting to automate the data gathering process for assessing what suburbs would be best for purchasing a house. This Flask API functions by being called through a google sheet API request of a specific region to scrapes the median weekly household income, number of professionals, households where rent payments are less than or equal to 30% of household income and households where mortgage repayments are less than 30% of household income. Once it retrieves the data of both the regions average and the state average it will proceed to send the data back to the google sheet and populate the Google sheet with the data. From there the user can make calculated comparisons on whether the region is of interest in terms of purchasing property.",
+    tools:
+      "Python, Google Sheets, Beautiful Soup, Requests: HTTP for Humans, Google scripts, Flask API",
+    imgSrc: ABS,
+    GithubLink: "https://github.com/nikoauer/ABS_data_scraper",
   },
 ];
 
